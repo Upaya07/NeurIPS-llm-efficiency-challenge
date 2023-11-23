@@ -1,0 +1,106 @@
+base_model: mistralai/Mistral-7B-v0.1
+base_model_config: mistralai/Mistral-7B-v0.1
+model_type: MistralForCausalLM
+tokenizer_type: LlamaTokenizer
+is_mistral_derived_model: true
+
+load_in_8bit: false
+load_in_4bit: true
+strict: false
+
+datasets:
+  - path: upaya07/NeurIPS-LLM-data
+    type: alpaca_chat.load_qa
+
+random_split: False
+instances_for_test_metric: 2000 # Used only if random_split = False. Limits number of test samples to use for evaluation.
+val_set_size: 0.1  # used when random_split = True. How much % from train to use for building test data.
+
+# ============ Change these paths =======================
+dataset_prepared_path: ./NeurIPS-LLM-data
+output_dir: ./qlora-NeurIPS-LLM-model
+
+wandb_project: Mistral-7B-ft-NeurIPS
+wandb_run_id: NeurIPS_model_01
+
+sequence_len: 8192
+sample_packing: true
+eval_sample_packing: true
+pad_to_sequence_len: true
+
+
+adapter: qlora
+
+lora_r: 128
+lora_alpha: 256
+lora_dropout: 0.05
+lora_target_linear: true
+lora_fan_in_fan_out:
+lora_target_modules:
+    - q_proj
+    - v_proj
+    - k_proj
+    - o_proj
+    - gate_proj
+    - down_proj
+    - up_proj
+#    - lm_head
+
+#lora_target_modules:
+#    - gate_proj
+#    - down_proj
+#    - up_proj
+#lora_target_modules:
+#    - q_proj
+#    - v_proj
+
+noisy_embedding_alpha: 5
+gradient_accumulation_steps: 4
+micro_batch_size: 2
+num_epochs: 3
+#max_steps: 32
+optimizer: paged_adamw_32bit
+#optimizer: adamw_torch
+lr_scheduler: cosine
+learning_rate: 0.00002
+
+train_on_inputs: false
+group_by_length: false
+bf16: true
+fp16: false
+tf32: false
+
+bfloat16: true
+
+gradient_checkpointing: true
+early_stopping_patience: 5000000
+local_rank:
+logging_steps: 1
+xformers_attention:
+flash_attention: true
+
+warmup_steps: 100
+eval_steps: 64
+#eval_table_size: 4
+#eval_table_max_new_tokens: 128
+save_steps: 64
+save_total_limit: 10
+metric_for_best_model: "eval_loss"
+greater_is_better: False
+load_best_model_at_end: True
+debug: true
+debug_num_examples: 1
+
+weight_decay: 0.01
+#
+max_grad_norm: 0.3
+
+# deepspeed:
+fsdp:
+fsdp_config:
+special_tokens:
+  bos_token: "<s>"
+  eos_token: "</s>"
+  unk_token: "<unk>"
+
+#seed: 57

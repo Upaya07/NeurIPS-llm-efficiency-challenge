@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: axolotl
+Version: 0.3.0
+Summary: LLM Trainer
+Provides-Extra: flash-attn
+Provides-Extra: deepspeed
+
+Axolotl is a tool designed to streamline the fine-tuning of various AI models, offering support for multiple configurations and architectures.

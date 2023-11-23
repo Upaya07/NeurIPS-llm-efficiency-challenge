@@ -1,0 +1,2 @@
+https://download.pytorch.org/whl/cu118
+https://huggingface.github.io/autogptq-index/whl/cu118/
