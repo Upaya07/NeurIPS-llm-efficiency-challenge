@@ -59,6 +59,8 @@
 | 2nd rank | 0.424 |
 | 🔥 **Ours (1st)** | **0.579** |
 
+Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/blob/main/4090_full_ranks.json) file for scores of top-few teams that were part of final stage in competition.
+
 
 ## Finetuning Data Preparation
 
