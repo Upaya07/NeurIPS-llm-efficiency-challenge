@@ -68,4 +68,11 @@ Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficienc
 ## Model Training details
 
 
-## Team Members: 
+## Team Members
+- [Ankur Parikh](https://www.linkedin.com/in/ankurnlpexpert/)
+- [Ashvini Kumar Jindal](https://www.linkedin.com/in/ashvini-jindal-26653262/)
+- [Pawan Rajpoot](https://www.linkedin.com/in/pawanrajpoot/)
+
+
+## Anknowledgements
+- We would like to thank [Akshita Sukhlecha](https://www.linkedin.com/in/akshita-sukhlecha/) for continuously helping with smooth submissions of models during competition, preparing docker files for final submissions, thoroughly testing the final model and subsequently proposing post-processing rules to process model output.
