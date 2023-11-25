@@ -67,6 +67,26 @@ Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficienc
 
 ## Model Training details
 
+```
+# clone repository
+git clone git@github.com:Upaya07/NeurIPS-llm-efficiency-challenge.git
+cd NeurIPS-llm-efficiency-challenge/training/axolotl
+
+# installation
+pip install packaging
+pip install -e '.[flash-attn]'
+pip install --pre torch --index-url https://download.pytorch.org/whl/nightly/cu118
+pip install -U git+https://github.com/huggingface/peft.git
+
+# Downloads required data and launches model fine-tuning. Runs 3-epochs on data. Script keeps track of the best checkpoint based on eval_loss.
+# nips_02.yml file contains all hyperparams.
+accelerate launch -m axolotl.cli.train examples/mistral/nips/nips_02.yml
+```
+
+### Expected loss curve
+![W B Chart 11_25_2023, 12_39_44 PM](https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/assets/5215386/1af496f4-43d5-4f70-b666-162a8687d45d)
+
+
 
 ## Team Members
 - [Ankur Parikh](https://www.linkedin.com/in/ankurnlpexpert/)
