@@ -75,6 +75,8 @@ Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficienc
 
 **Final model training data**: https://huggingface.co/datasets/upaya07/NeurIPS-LLM-data
 
+For more details on fine-tuning data preparation, visit [this doc](https://docs.google.com/document/d/1FJm7IRdpjPrN3-zGSw4GuqK7MYuRJVRcYXg2252lI04/edit?usp=sharing)
+
 
 ## Model Training
 
