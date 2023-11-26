@@ -62,13 +62,21 @@
 Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/blob/main/4090_full_ranks.json) file for scores of top-few teams that were part of final stage in competition.
 
 
-## Finetuning Data Preparation
+## Training Data Preparation
 <img width="1196" alt="Training_Data_Prep_akjindal53244" src="https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/assets/5215386/150cda6b-4b41-4fab-af45-585153c355b3">
 
 
+### Data Preparation Scripts
+- [prepare_math_reasoning_dataset.py](https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/blob/main/data_prep/prepare_math_reasoning_dataset.py) for preparing maths reasoning dataset.
+- [prepare_exact_match_tasks_dataset.py](https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/blob/main/data_prep/prepare_exact_match_tasks_dataset.py) for preparing dataset for exact match tasks from Natural Instructions.
+- [prepare_generation_tasks_dataset.py](https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/blob/main/data_prep/prepare_generation_tasks_dataset.py) for preparing dataset for generation tasks from Natural Instructions.
+- [combine_datasets.py](https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/blob/main/data_prep/combine_datasets.py) combines all datasets as shown in above diagram and prepares final train/validation splits.
 
 
-## Model Training details
+**Final model training data**: https://huggingface.co/datasets/upaya07/NeurIPS-LLM-data
+
+
+## Model Training
 
 ```
 # clone repository
