@@ -1,6 +1,14 @@
 # NeurIPS-llm-efficiency-challenge
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](LICENSE)
+[![Model Weight License](https://img.shields.io/badge/Model%20Weights%20License-Apache_2.0-green.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
 [Our model](https://huggingface.co/upaya07/model_02) won 🏆 first prize 🏆 in RTX 4090 track in [NeurIPS Large Language Model Efficiency Challenge: 1 LLM + 1GPU + 1Day](https://llm-efficiency-challenge.github.io/) competition. We used [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) as a base model and used QLoRA to fine-tune it for 24 hours on a single RTX 4090 GPU.
+<br>
+
+| Model | Checkpoint | Dataset  | License|
+| ----- |------| ---- | ----- |
+| Model | 🤗 <a href="https://huggingface.co/upaya07/model_02" target="_blank">HF Link</a>  | <a href="https://huggingface.co/datasets/upaya07/NeurIPS-LLM-data" target="_blank">upaya07/NeurIPS-LLM-data  </a> |  <a href="http://www.apache.org/licenses/" target="_blank">Apache License 2.0  </a> |
 
 
 ## Results
