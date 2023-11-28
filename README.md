@@ -76,7 +76,7 @@ Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficienc
 
 ### Natural Instructions Dataset Preparation
 [Natural Instructions](https://github.com/allenai/natural-instructions) dataset is a community effort to create a large collection of tasks and their natural language definitions/instructions. As show in above diagram, we sample from Natural Instructions dataset. Here is the 4-step process:
-- Out of 1600+ tasks files, we first manually select ~450 task files relevant to the competition. **We do not use any MMLU or translationt tasks.**
+- Out of 1600+ tasks files, we first manually select ~450 task files relevant to the competition. **We do not use any MMLU or translation tasks.**
 - A task output in Natural Instructions dataset is expected to be either an exact match or an open ended generation. Hence, we manually annotate each task file as one of two categories: Exact Match or Generation.
 - We run few-shot inference on selected task files. Running few-shot inference helps with controlled generation so we can compute model performance metric quantitatively. Refer to Input and Output Schema for Mistral Inference for an example.
   - For Exact Match, we use accuracy as metric.
