@@ -131,8 +131,8 @@ accelerate launch -m axolotl.cli.train examples/mistral/nips/nips_02.yml
 
 
 ## Team Members
-- [Ankur Parikh](https://www.linkedin.com/in/ankurnlpexpert/)
 - [Ashvini Kumar Jindal](https://www.linkedin.com/in/ashvini-jindal-26653262/)
+- [Ankur Parikh](https://www.linkedin.com/in/ankurnlpexpert/)
 - [Pawan Rajpoot](https://www.linkedin.com/in/pawanrajpoot/)
 
 
