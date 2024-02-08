@@ -74,8 +74,8 @@ Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficienc
 <img width="1196" alt="Training_Data_Prep_akjindal53244" src="https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/assets/5215386/150cda6b-4b41-4fab-af45-585153c355b3">
 
 
-## Birbal Models
-| Birbal Models | Checkpoint | Dataset  | License|
+## Birbal Models and Datasets
+| Model | Checkpoint | Dataset  | License|
 | ----- |------| ---- | ----- |
 | Birbal-200k | 🤗 <a href="https://huggingface.co/upaya07/Birbal-7B-V1" target="_blank">Birbal-200k</a>  | <a href="https://huggingface.co/datasets/upaya07/NeurIPS-LLM-data" target="_blank">200k  </a> |  <a href="http://www.apache.org/licenses/" target="_blank">Apache License 2.0  </a> |
 | Birbal-400k | 🤗 <a href="https://huggingface.co/upaya07/Birbal-400k" target="_blank">Birbal-400k</a>  | <a href="https://huggingface.co/datasets/upaya07/Birbal-400k-data" target="_blank">400k  </a> |  <a href="http://www.apache.org/licenses/" target="_blank">Apache License 2.0  </a> |
