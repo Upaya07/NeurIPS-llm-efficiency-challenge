@@ -74,6 +74,16 @@ Refer to [4090_full_ranks.json](https://github.com/Upaya07/NeurIPS-llm-efficienc
 <img width="1196" alt="Training_Data_Prep_akjindal53244" src="https://github.com/Upaya07/NeurIPS-llm-efficiency-challenge/assets/5215386/150cda6b-4b41-4fab-af45-585153c355b3">
 
 
+## Birbal Models
+| Birbal Models | Checkpoint | Dataset  | License|
+| ----- |------| ---- | ----- |
+| Birbal-200k | 🤗 <a href="https://huggingface.co/upaya07/Birbal-7B-V1" target="_blank">Birbal-200k</a>  | <a href="https://huggingface.co/datasets/upaya07/NeurIPS-LLM-data" target="_blank">200k  </a> |  <a href="http://www.apache.org/licenses/" target="_blank">Apache License 2.0  </a> |
+| Birbal-400k | 🤗 <a href="https://huggingface.co/akjindal53244/peft_model_1" target="_blank">Birbal-400k</a>  | <a href="https://huggingface.co/datasets/akjindal53244/400k_1" target="_blank">400k  </a> |  <a href="http://www.apache.org/licenses/" target="_blank">Apache License 2.0  </a> |
+| Birbal-700k | 🤗 <a href="https://huggingface.co/akjindal53244/peft_model_3" target="_blank">Birbal-700k</a>  | <a href="https://huggingface.co/datasets/akjindal53244/700k_1" target="_blank">700k  </a> |  <a href="http://www.apache.org/licenses/" target="_blank">Apache License 2.0  </a> |
+
+
+
+
 ### Natural Instructions Dataset Preparation
 [Natural Instructions](https://github.com/allenai/natural-instructions) dataset is a community effort to create a large collection of tasks and their natural language definitions/instructions. As show in above diagram, we sample from Natural Instructions dataset. Here is the 4-step process:
 - Out of 1600+ tasks files, we first manually select ~450 task files relevant to the competition. **We do not use any MMLU or translation tasks.**
